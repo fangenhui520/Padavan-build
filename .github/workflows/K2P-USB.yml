@@ -1,4 +1,4 @@
-name: K2P
+name: K2P-USB
 
 on: 
   release:
