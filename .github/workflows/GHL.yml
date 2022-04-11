@@ -1,5 +1,4 @@
-name: K2P-USB
-
+name: GHL
 on: 
   release:
     types: [published]
@@ -37,7 +36,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: K2P-USB
+        TNAME: GHL
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
@@ -99,5 +98,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: K2P-Padavan4.4-usb
+        name: $TNAME-Padavan4.4-usb
         path: /opt/images
