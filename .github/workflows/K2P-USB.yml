@@ -98,5 +98,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: MY-Padavan4.4-usb
+        name: K2P-USB-Padavan4.4.198-usb
         path: /opt/images
